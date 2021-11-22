@@ -8,10 +8,12 @@ import {
 } from "react-icons/fa";
 import FollowerCard from "./Components/FollowerCard";
 import StatsCard from "./Components/StatsCard";
+import { GlobalStyle } from "./Components/styles/Global";
 
 function App() {
   return (
     <div>
+      <GlobalStyle />
       <FollowerCard
         socialIcon={<FaFacebookSquare />}
         arrowIcon={<FaCaretUp />}
