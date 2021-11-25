@@ -1,33 +1,33 @@
-import {
-  FaCaretDown,
-  FaCaretUp,
-  FaTwitter,
-  FaFacebookSquare,
-  FaInstagram,
-  FaYouTube,
-} from "react-icons/fa";
 import FollowerCard from "./Components/FollowerCard";
 import StatsCard from "./Components/StatsCard";
+import { followerCardContent, statsCardContent } from "./content";
 import { GlobalStyle } from "./Components/styles/Global";
 
 function App() {
   return (
     <div>
       <GlobalStyle />
-      <FollowerCard
-        socialIcon={<FaFacebookSquare />}
-        arrowIcon={<FaCaretUp />}
-        username="@nathanf"
-        followers={1987}
-        updates={12}
-      />
-      <StatsCard
-        statName="Page Views"
-        socialIcon={<FaFacebookSquare />}
-        arrowIcon={<FaCaretUp />}
-        count={1987}
-        updates={3}
-      />
+      {followerCardContent.map((card) => (
+        <FollowerCard
+          key={card.id}
+          socialIcon={card.socialIcon}
+          arrowIcon={card.arrowIcon}
+          username={card.username}
+          followers={card.followers}
+          updates={card.updates}
+        />
+      ))}
+
+      {statsCardContent.map((card) => (
+        <StatsCard
+          key={card.id}
+          statName={card.statName}
+          socialIcon={card.socialIcon}
+          arrowIcon={card.arrowIcon}
+          count={card.count}
+          updates={card.updates}
+        />
+      ))}
     </div>
   );
 }
