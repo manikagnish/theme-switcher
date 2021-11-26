@@ -5,8 +5,8 @@ export const StyledToggleSwitch = styled.label`
   & {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 50px;
+    height: 28px;
   }
 
   /* Hide default HTML checkbox */
@@ -38,8 +38,8 @@ export const StyledToggleSwitch = styled.label`
   span:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 20px;
     left: 4px;
     bottom: 4px;
     background-color: var(--clr-bg-card-dark);
@@ -50,11 +50,7 @@ export const StyledToggleSwitch = styled.label`
 
   input:checked + span {
     background-color: #2196f3;
-    background-image: linear-gradient(
-      to right,
-      hsl(210, 78%, 56%),
-      hsl(146, 68%, 55%)
-    );
+    background-image: linear-gradient(to right, var(--clr-toggle-gradient));
   }
 
   input:focus + span {
@@ -62,9 +58,9 @@ export const StyledToggleSwitch = styled.label`
   }
 
   input:checked + span:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
     background-color: var(--clr-white);
   }
 `;
