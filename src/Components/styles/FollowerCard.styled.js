@@ -2,17 +2,16 @@ import styled from "styled-components";
 
 export const StyledFollowerCard = styled.div`
   width: 250px;
-  background: var(--clr-bg-card-light);
+  background: ${(props) => props.theme.cardBg};
   padding: 1em;
   border-radius: 5px;
   border-top: 4px solid ${({ color }) => color};
-  color: var(--clr-text-blue-light);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   margin: 1em;
 
   &:hover {
-    background-color: hsl(227, 47%, 90%);
+    background-color: ${(props) => props.theme.cardBgHover};
   }
 
   svg {
@@ -30,6 +29,7 @@ export const StyledFollowerCard = styled.div`
     font-weight: bold;
     font-size: 50px;
     margin-top: 20px;
+    color: ${(props) => props.theme.countClr};
   }
 
   span {

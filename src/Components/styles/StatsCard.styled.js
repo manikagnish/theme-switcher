@@ -2,16 +2,15 @@ import styled from "styled-components";
 
 export const StyledStatsCard = styled.div`
   width: 250px;
-  background: var(--clr-bg-card-light);
+  background: ${(props) => props.theme.cardBg};
   padding: 1em;
   border-radius: 5px;
-  color: var(--clr-text-blue-light);
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   margin: 1em;
 
   &:hover {
-    background-color: hsl(227, 47%, 90%);
+    background-color: ${(props) => props.theme.cardBgHover};
   }
 
   div:first-child {
@@ -20,7 +19,6 @@ export const StyledStatsCard = styled.div`
 
   p {
     font-weight: bold;
-    color: var(--clr-text-gray-light);
   }
 
   svg {
@@ -31,6 +29,7 @@ export const StyledStatsCard = styled.div`
 
   h3 {
     font-size: 30px;
+    color: ${(props) => props.theme.countClr};
   }
 
   small {

@@ -1,12 +1,22 @@
+import { useState } from "react";
+
 import FollowerCard from "./Components/FollowerCard";
 import StatsCard from "./Components/StatsCard";
 import { followerCardContent, statsCardContent } from "./content";
 import { GlobalStyle } from "./Components/styles/Global";
 import { Flex } from "./Components/styles/Flex.styled";
+import { ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./themes";
 
 function App() {
+  const [theme, setTheme] = useState("dark");
+
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   return (
-    <div>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <GlobalStyle />
       <Flex justify="center">
         {followerCardContent.map((card) => (
@@ -37,7 +47,7 @@ function App() {
           />
         ))}
       </Flex>
-    </div>
+    </ThemeProvider>
   );
 }
 

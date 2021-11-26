@@ -19,11 +19,13 @@ export const GlobalStyle = createGlobalStyle`
         --clr-bg-dark: hsl(230, 17%, 14%);
         --clr-bg-pattern-dark: hsl(232, 19%, 15%);
         --clr-bg-card-dark: hsl(228, 28%, 20%);
+        --clr-bg-card-dark-hover: hsl(228, 28%, 25%);
         --clr-text-blue-dark: hsl(228, 34%, 66%);
 
         /* light-theme */
         --clr-bg-pattern-light: hsl(225, 100%, 98%);
         --clr-bg-card-light: hsl(227, 47%, 96%);
+        --clr-bg-card-light-hover: hsl(227, 47%, 90%);
         --clr-text-gray-light: hsl(228, 12%, 44%);
         --clr-text-blue-light: hsl(230, 17%, 14%);
     }
@@ -37,5 +39,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-size: 14px;
         font-family:'Inter', sans-serif; ;
+        background-color: ${(props) => props.theme.body};
+        color: ${(props) => props.theme.fontColor}
     }
 `;
