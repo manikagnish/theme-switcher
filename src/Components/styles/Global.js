@@ -40,5 +40,6 @@ export const GlobalStyle = createGlobalStyle`
         font-family:'Inter', sans-serif; ;
         background-color: ${(props) => props.theme.body};
         color: ${(props) => props.theme.fontColor};
+        padding: 0 10vw;
     }
 `;

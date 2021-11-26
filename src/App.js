@@ -7,7 +7,7 @@ import Navbar from "./Components/Navbar";
 import { followerCardContent, statsCardContent } from "./content";
 
 import { GlobalStyle } from "./Components/styles/Global";
-import { Flex } from "./Components/styles/Flex.styled";
+import { Grid } from "./Components/styles/Flex.styled";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./themes";
 
@@ -19,7 +19,7 @@ function App() {
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Navbar />
-      <Flex justify="center">
+      <Grid>
         {followerCardContent.map((card) => (
           <FollowerCard
             key={card.id}
@@ -32,9 +32,9 @@ function App() {
             smallClr={card.smallClr}
           />
         ))}
-      </Flex>
+      </Grid>
 
-      <Flex justify="center">
+      <Grid>
         {statsCardContent.map((card) => (
           <StatsCard
             key={card.id}
@@ -47,7 +47,7 @@ function App() {
             smallClr={card.smallClr}
           />
         ))}
-      </Flex>
+      </Grid>
     </ThemeProvider>
   );
 }

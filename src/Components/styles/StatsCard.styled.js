@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const StyledStatsCard = styled.div`
-  width: 250px;
+  /* width: 250px; */
   background: ${(props) => props.theme.cardBg};
   padding: 1em;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  margin: 1em;
+  /* margin: 1em; */
 
   &:hover {
     background-color: ${(props) => props.theme.cardBgHover};

@@ -17,3 +17,10 @@ export const FlexCol = styled.div`
     flex-direction: column;
   }
 `;
+
+export const Grid = styled.div`
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+`;
