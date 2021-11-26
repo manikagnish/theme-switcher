@@ -7,9 +7,11 @@ export default function StatsCard({
   count,
   arrowIcon,
   updates,
+  color,
+  smallClr,
 }) {
   return (
-    <StyledStatsCard>
+    <StyledStatsCard color={color} smallClr={smallClr}>
       <Flex justify="space-between">
         <p>{statName}</p>
         {socialIcon}

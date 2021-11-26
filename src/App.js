@@ -23,16 +23,20 @@ function App() {
         ))}
       </Flex>
 
-      {statsCardContent.map((card) => (
-        <StatsCard
-          key={card.id}
-          statName={card.statName}
-          socialIcon={card.socialIcon}
-          arrowIcon={card.arrowIcon}
-          count={card.count}
-          updates={card.updates}
-        />
-      ))}
+      <Flex justify="center">
+        {statsCardContent.map((card) => (
+          <StatsCard
+            key={card.id}
+            statName={card.statName}
+            socialIcon={card.socialIcon}
+            arrowIcon={card.arrowIcon}
+            count={card.count}
+            updates={card.updates}
+            color={card.color}
+            smallClr={card.smallClr}
+          />
+        ))}
+      </Flex>
     </div>
   );
 }
