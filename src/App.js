@@ -3,11 +3,13 @@ import { useContext } from "react";
 import FollowerCard from "./Components/FollowerCard";
 import StatsCard from "./Components/StatsCard";
 import Navbar from "./Components/Navbar";
+import TopPattern from "./Components/TopPattern";
 
 import { followerCardContent, statsCardContent } from "./content";
 
 import { GlobalStyle } from "./Components/styles/Global";
 import { Grid } from "./Components/styles/Flex.styled";
+import { StyledSecondaryHeading } from "./Components/styles/SecondaryHeading.styled";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme } from "./themes";
 
@@ -18,6 +20,7 @@ function App() {
   return (
     <ThemeProvider theme={theme === "dark" ? darkTheme : lightTheme}>
       <GlobalStyle />
+      <TopPattern />
       <Navbar />
       <Grid>
         {followerCardContent.map((card) => (
@@ -33,6 +36,8 @@ function App() {
           />
         ))}
       </Grid>
+
+      <StyledSecondaryHeading>Overview - today</StyledSecondaryHeading>
 
       <Grid>
         {statsCardContent.map((card) => (

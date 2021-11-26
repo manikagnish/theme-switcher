@@ -41,5 +41,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: ${(props) => props.theme.body};
         color: ${(props) => props.theme.fontColor};
         padding: 0 10vw;
+        overflow-x: hidden;
+        padding-bottom: 3em;
     }
 `;

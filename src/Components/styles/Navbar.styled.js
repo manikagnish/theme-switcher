@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledNavbar = styled.nav`
-  padding: 1em 0;
+  padding: 3em 0;
   font-weight: bold;
   color: ${(props) => props.theme.statTypeClr};
 
