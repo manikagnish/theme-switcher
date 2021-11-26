@@ -50,7 +50,7 @@ export const StyledToggleSwitch = styled.label`
 
   input:checked + span {
     background-color: #2196f3;
-    background-image: linear-gradient(to right, var(--clr-toggle-gradient));
+    background-image: linear-gradient(to right, #ccd, #ccd);
   }
 
   input:focus + span {
