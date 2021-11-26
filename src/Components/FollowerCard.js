@@ -7,19 +7,22 @@ export default function FollowerCard({
   username,
   followers,
   updates,
+  color,
+  smallClr,
 }) {
   return (
-    <StyledFollowerCard>
-      <div></div>
-      <Flex justify="center">
-        {socialIcon}
-        <p>{username}</p>
+    <StyledFollowerCard color={color} smallClr={smallClr}>
+      <Flex direction="column">
+        <Flex justify="center">
+          {socialIcon}
+          <p>{username}</p>
+        </Flex>
+        <h2>{followers}</h2>
+        <span>followers</span>
+        <small>
+          {arrowIcon} {updates} Today
+        </small>
       </Flex>
-      <h2>{followers}</h2>
-      <span>followers</span>
-      <small>
-        {arrowIcon} {updates} Today
-      </small>
     </StyledFollowerCard>
   );
 }
