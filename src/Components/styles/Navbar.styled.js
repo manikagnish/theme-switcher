@@ -7,6 +7,7 @@ export const StyledNavbar = styled.nav`
 
   h1 {
     color: ${(props) => props.theme.navClr};
+    font-size: 26px;
   }
 
   span {

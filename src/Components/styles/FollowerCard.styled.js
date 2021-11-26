@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 export const StyledFollowerCard = styled.div`
-  /* width: 250px; */
   background: ${(props) => props.theme.cardBg};
   padding: 1em;
   border-radius: 5px;
   border-top: 4px solid ${({ color }) => color};
   transition: all 0.2s ease-in-out;
   cursor: pointer;
-  /* margin: 1em; */
 
   &:hover {
     background-color: ${(props) => props.theme.cardBgHover};

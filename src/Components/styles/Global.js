@@ -8,8 +8,8 @@ export const GlobalStyle = createGlobalStyle`
         --clr-facebook: hsl(208, 92%, 53%);
         --clr-twitter: hsl(203, 89%, 53%);
         --clr-instagram-light: hsl(37, 97%, 70%);
-        --clr-instagram-dark: hsl(37, 97%, 70%), hsl(329, 70%, 58%);
-        --clr-instagram-gradient: hsl(329, 70%, 58%);
+        --clr-instagram-dark:  hsl(329, 70%, 58%);
+        --clr-instagram-gradient: hsl(37, 97%, 70%), hsl(329, 70%, 58%);
         --clr-youtube: hsl(348, 97%, 39%);
         --clr-toggle-gradient: hsl(210, 78%, 56%), hsl(146, 68%, 55%);
         --clr-white: hsl(0, 0%, 100%);
