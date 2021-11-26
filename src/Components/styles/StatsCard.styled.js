@@ -19,6 +19,7 @@ export const StyledStatsCard = styled.div`
 
   p {
     font-weight: bold;
+    color: ${(props) => props.theme.statTypeClr};
   }
 
   svg {

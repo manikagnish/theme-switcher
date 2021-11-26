@@ -4,6 +4,7 @@ export const lightTheme = {
   cardBg: "var(--clr-bg-card-light)",
   cardBgHover: "var(--clr-bg-card-light-hover)",
   countClr: "var(--clr-text-blue-light)",
+  statTypeClr: "var(--clr-text-gray-light)",
 };
 
 export const darkTheme = {
@@ -12,4 +13,5 @@ export const darkTheme = {
   cardBg: "var(--clr-bg-card-dark)",
   cardBgHover: "var(--clr-bg-card-dark-hover)",
   countClr: "var(--clr-white)",
+  statTypeClr: "var(--clr-text-blue-dark)",
 };
